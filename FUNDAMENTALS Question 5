@@ -1,0 +1,55 @@
+Character Value
+
+You are provided with this table containing a character and its value. Given one of this character as input you need to print it's corresponding value.
+| P or p 	- PrepBytes      	|
+| Z or z 	- Zenith         	|
+| E or e 	- Expert Coder   	|
+| D or d 	- Data Structure 	|
+
+Input format
+A single character
+
+Output format
+For each test case print the corresponding value of the given character.
+
+Time Limit
+1​second
+
+Example
+Input
+e
+
+Output
+Expert Coder
+
+
+/***CODE***/
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+  //write your code here
+  
+  char ch;
+  cin>>ch;
+  switch(ch){
+    case 'P':
+    case 'p': cout<<"PrepBytes"<<endl;
+              break;
+    case 'Z':
+    case 'z': cout<<"Zenith"<<endl;
+              break;
+    case 'E':
+    case 'e': cout<<"Expert Coder"<<endl;
+              break;
+    case 'D':
+    case 'd': cout<<"Data Structure"<<endl;
+              break;
+              
+    default: cout<<"Error"<<endl;
+    
+  }
+  return 0;
+}
